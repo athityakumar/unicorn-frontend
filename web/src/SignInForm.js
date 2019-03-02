@@ -39,6 +39,7 @@ class SignInForm extends Component {
         })
       ).then(response => {
         alert(response.data.name);
+        localStorage.setItem("key1", response.data.name);          
         // save to localStorage
       })
       .catch(function (error) {
