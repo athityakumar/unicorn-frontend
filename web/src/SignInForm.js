@@ -39,7 +39,10 @@ class SignInForm extends Component {
         })
       ).then(response => {
         alert(response.data.name);
-        // save to localStorage
+          localStorage.setItem('name',response.data.name)
+          localStorage.setItem('email',this.state.email)
+          localStorage.setItem('password',this.state.password)
+          localStorage.setItem('isLoggedin',true);
       })
       .catch(function (error) {
         console.log(error);
