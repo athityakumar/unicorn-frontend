@@ -20,8 +20,11 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+           {localStorage.getItem("key1")}
           </a>
+          <form onSubmit={localStorage.clear()}>
+          <input type="Submit" value="Logout" />
+          </form>
         <SignUpForm />
         <SignInForm />
         </header>

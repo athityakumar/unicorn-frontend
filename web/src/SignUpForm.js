@@ -22,7 +22,7 @@ class SignUpForm extends Component {
     }
   }
 
-  handleSubmit(event) {
+  handleSubmit(event) {    
     alert(`A user was registered: ${this.state.username}, ${this.state.email}, ${this.state.password}`);
 
     axios.post(
